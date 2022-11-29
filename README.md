@@ -1,5 +1,5 @@
 # opticaLumina
-Landing page para una óptica ficticia, utilizando HTML y CSS. Actualmente siendo actualizada para agregarle funcionalidad con Javascript.
+Landing page para una óptica ficticia, utilizando HTML y CSS. 
 
 Primer proyecto individual para EducaciónIT. Para llevarlo a cabo, tuve en cuenta las buenas prácticas de la programación, de las cuales destaco:
 
