@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: #F7F6DC;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 96px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed; /* POSITION:FIXED deja el header anclado, pero hay que hacer más cambios para que quede bien */
+    background-color: rgb(247, 246, 220, 0.97); /* el bgc ya es blanco por defecto, pero en este caso lo tengo que volver a poner porque la barra quedo por arriba del herobanner que tiene fondo amarillo. Tiene una muy pequeña transparencia, de 0.97 */
+}
+
+    #logo img{
+        vertical-align: middle;
+        margin-right: 16px;
+        width: 80px;
+    }
+
+    #logo{
+        font-size: 24px;
+    }
+
+    header a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        margin-right: 8px;
+    }
+
+    header nav a{
+        padding: 16px;
+    }
+
+/* HERO BANNER */
+#heroBanner{
+    padding-top: 96px; /* por el position:fixed */
+    height: 632px; /* Eran 536px originalmente, pero por el position:fixed, le sume 96px, que es el height del header */
+    background-color: #f1db51;
+    display: flex;
+    align-items: center;
+}
+
+    #heroBanner div{
+        width: 688px;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 16px;
+        padding-left: 104px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    #heroBanner div h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    #heroBanner div p{
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 16px;
+        width: 500px;
+        margin-left: 64px;
+    }
+
+    #heroBanner img{
+        border-radius: 16px;
+        margin-left: 64px;
+    }
+
+/* MAIN */
+main{
+    width: 1100px;
+    margin: auto;
+}
+
+/* SEPARADOR */
+#separador{ 
+    margin: 32px auto 40px auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+    #separador img{
+        width: 88px;
+        display: flex;
+        margin: auto;
+    }
+
+    #separador p{
+        width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+
+/* PRODUCTOS */
+#productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+    #productos article{
+        width: 288px;
+        height: 288px;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        background-color: #f1db51;
+        border-radius: 16px;
+        box-shadow: 8px 8px 3px #cecece; /* 8px: arriba a la derecha/ 8px: abajo a la izquierda / 3px: valor del difuminado (puede prescindirse) / #cecece: color de la sombra */
+    }
+
+    #productos article div{
+        margin: auto;
+    }
+
+    #productos article img{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        margin: auto;
+    }
+
+    #productos article h2{
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+/* CARACTERÍSTICAS */
+#caracteristicas{
+    display: flex;
+    justify-content: space-around;
+}
+
+    #caracteristicas article{
+        margin: 80px 0;
+        width: 288px;
+    }
+
+    #caracteristicas article img{
+        width: 40px;
+        vertical-align: middle;
+    }
+
+    #caracteristicas article h3{
+        display: inline;
+        margin-left: 8px;
+    }
+
+    #caracteristicas article p{
+        width: 288px;
+        text-align: end;
+        margin-top: 24px;
+        padding-left: 36px;
+    }
+
+/* SUCURSALES */
+
+    #sucursales h2{
+        margin: 0 0 56px -128px;
+        text-align: end;
+        width: 640px;
+        background-color: #f1db51;
+        padding: 24px 40px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .tituloLista{
+        font-weight: 600;
+        font-size: 20px;
+        width: 280px;
+    }
+
+    #sucursales ul{
+        padding: 16px 32px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px;
+        border-radius: 8px;
+        background-color: rgb(214, 208, 184, 0.4);
+    }
+
+    #sucursales ul:hover{
+        background-color: #f1db51;
+        border-radius: 8px;
+    }
+
+    #sucursales ul img{
+        width: 16px;
+        vertical-align: middle;
+        margin-right: 4px;
+    }
+
+    #sucursales ul div{
+        width: 180px;
+        display: inline-flex;
+    }
+
+    .reloj{
+        margin-top: 10px;
+    }
+
+/* CONTACTO ############################## */
+#contacto2{
+    height: 96px;
+}
+    #contacto{
+        background-image: url(../css/imgs/fondocontactoblur30.jpg);
+        background-size: cover;
+        margin-top: 56px;
+        padding: 32px;    
+    }
+
+    #contacto form{
+        width: 698px;
+        background-color: #fff;
+        margin: 64px auto 0 auto;
+        padding: 48px 32px;
+        border-radius: 12px; 
+        border: 1px solid #cecece;
+        background-color: #F7F6DC;
+    }
+
+    #contacto form input, textarea{
+        display: block;
+        font-family: Montserrat, sans-serif;
+        padding: 16px;
+        margin: 0 0 24px 0;
+        border: none;
+        border-radius: 12px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    textarea{
+        height: 104px;
+        resize:none
+    }
+
+    #contacto button{
+        width: 100%;
+        background-color:#f1db51;
+        border-radius: 12px;
+        border: none;
+        padding: 16px;
+        font-weight: 400;
+        font-size: 20px;
+        font-family: Montserrat, sans-serif;
+        cursor: pointer;
+    }
+
+    #contacto button:hover{
+        font-weight: 600;
+        border: black solid 1px;
+    }
+
+/* FOOTER ##################################### */
+footer{
+    background-color:#f1db51;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+    #redes li{
+        list-style-type: none;
+        margin-bottom: 8px;
+    }
+
+    #redes img{
+        width: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    #preguntas li{
+        list-style-type: none;
+        margin-bottom: 8px;
+    }
+    
+    #historia{
+        width: 300px;
+    }
+
+    #historia h4{
+        margin-bottom: 8px;
+    }
+
+
