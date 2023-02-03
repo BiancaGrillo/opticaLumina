@@ -1,6 +1,6 @@
 # Primer proyecto: Óptica Lúmina
 **HTML | CSS | JS**
-### [Abrilo en el navegador:](www.google.com)
+### [Abrilo en el navegador:](https://opticalumina.netlify.app/)
 
 Óptica Lúmina es una landing page que hice utilizando HTML, CSS y JS.  
 
